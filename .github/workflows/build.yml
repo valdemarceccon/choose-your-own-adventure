@@ -11,6 +11,8 @@ on:
         description: "Nome do binario"
         required: false
         default: "cyoa_server"
+  push:
+    branches: ["master"]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
