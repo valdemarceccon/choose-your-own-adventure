@@ -26,7 +26,7 @@ jobs:
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login https://docker.pkg.github.com -u valdemar.ceccon --password-stdin
     
     - name: build image
-      run: docker built -t $IMAGE_NAME .
+      run: docker build -t $IMAGE_NAME .
     
     - name: push image
       run: docker push $IMAGE_NAME
