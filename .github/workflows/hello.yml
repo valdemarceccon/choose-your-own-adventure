@@ -8,8 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       nome:
-        description: "Nome de alguém"
-        required: true
+        description: "Nome do binario"
+        required: false
+        default: "cyoa_server"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,5 +26,5 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, ${{ github.event.inputs.nome }}!
+      run: go build -v -o ${{ github.event.inputs.nome }} cmd/cyoaweb/main.go
 
