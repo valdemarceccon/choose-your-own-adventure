@@ -24,7 +24,7 @@ jobs:
         ssh-host: 134.122.124.102
     - name: Teste
       run: |
-        ssh root@134.122.124.102 bash -c "docker-compose down \
+        ssh root@134.122.124.102 "docker-compose down &&\
         bash create-docker-compose.sh docker.pkg.github.com/${{ github.repository }}/cyoa-server:${{ github.sha }}"
         
 
