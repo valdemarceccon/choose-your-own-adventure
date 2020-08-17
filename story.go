@@ -14,7 +14,7 @@ var defaultHandlerTemplate = `
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Choose your own adventure!!!!</title>
+    <title>Choose your own adventure!!!!!!!!!!!!!!!!!!!!!!!!!!!!</title>
     <style>
       body {
         font-family: helvetica, arial;
